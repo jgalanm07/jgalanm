@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jorge Galán-Mena · Portafolio</title>
+<meta name="description" content="Portafolio de Jorge Andrés Galán Mena — especialista en inteligencia artificial aplicada y gestión del conocimiento. Quito, Ecuador." />
+<meta property="og:title" content="Jorge Galán-Mena · Portafolio" />
+<meta property="og:description" content="Especialista en inteligencia artificial aplicada y gestión del conocimiento. Quito, Ecuador." />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://jgalanm07.github.io/jgalanm/" />
+<meta property="og:image" content="https://jgalanm07.github.io/jgalanm/assets/profile/jorge_galan.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://jgalanm07.github.io/jgalanm/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    /* Palette — pure white + ink black + deep burgundy accent.
+       No beige anywhere. Subtle cool gray for hairlines / muted text. */
+    --bg: #ffffff;
+    --bg-alt: #f6f6f5;
+    --ink: #0d0d0e;
+    --ink-2: #2a2a2c;
+    --ink-3: #5a5a5e;
+    --ink-4: #8a8a8e;
+    --hair: #1a1a1c;
+    --hair-soft: #d8d8d6;
+    --accent: #1c3d5a;     /* deep marine */
+    --accent-soft: #e8edf2;
+
+    --serif-display: 'Playfair Display', 'EB Garamond', Georgia, serif;
+    --serif-body: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --container: 1240px;
+    --measure: 68ch;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif-body);
+    font-size: 18px;
+    line-height: 1.55;
+    font-feature-settings: "kern", "liga", "onum" 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--ink); color: var(--bg); }
+  a { color: inherit; text-decoration: none; }
+  a.link { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a.link:hover { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .wrap { max-width: var(--container); margin: 0 auto; padding: 0 48px; }
+  @media (max-width: 800px) { .wrap { padding: 0 24px; } }
+
+  /* ---- Top nav / masthead ribbon ---- */
+  .ribbon {
+    border-bottom: 1px solid var(--hair);
+    position: sticky; top: 0; z-index: 30;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.92);
+  }
+  .ribbon-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .ribbon-inner .mark {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--serif-display); font-weight: 700;
+    font-size: 18px; letter-spacing: 0; text-transform: none;
+  }
+  .ribbon-inner .mark .seal {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--ink); color: var(--bg);
+    display: grid; place-items: center;
+    font-family: var(--serif-display); font-weight: 700; font-size: 12px;
+  }
+  .ribbon-nav { display: flex; gap: 26px; }
+  .ribbon-nav a { color: var(--ink-3); transition: color .15s; }
+  .ribbon-nav a:hover { color: var(--accent); }
+  @media (max-width: 700px) { .ribbon-nav { display: none; } }
+
+  /* ---- Section chrome ---- */
+  .chapter {
+    display: flex; align-items: baseline; gap: 16px;
+    border-top: 1px solid var(--hair);
+    padding-top: 18px;
+    margin-bottom: 36px;
+  }
+  .chapter .num {
+    font-family: var(--mono);
+    font-size: 12px; letter-spacing: 0.18em;
+    color: var(--accent);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .chapter .title {
+    font-family: var(--serif-display);
+    font-weight: 500;
+    font-size: clamp(34px, 4.4vw, 56px);
+    line-height: 1.0;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .chapter .sub {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.14em;
+    color: var(--ink-4); text-transform: uppercase;
+    align-self: end;
+  }
+  @media (max-width: 700px) { .chapter .sub { display: none; } }
+
+  section { padding: 80px 0; }
+  section + section { padding-top: 30px; }
+
+  /* ---- HERO / masthead ---- */
+  .hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--hair);
+  }
+  .hero-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em;
+    color: var(--ink-3); text-transform: uppercase;
+    border-bottom: 1px solid var(--hair-soft);
+    padding-bottom: 16px; margin-bottom: 56px;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 60px;
+    align-items: end;
+  }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+  .hero-name {
+    font-family: var(--serif-display);
+    font-weight: 500;
+    font-size: clamp(64px, 11vw, 156px);
+    line-height: 0.92;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .hero-name .amp {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .hero-tag {
+    margin-top: 28px;
+    font-family: var(--serif-body);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2.2vw, 28px);
+    line-height: 1.4;
+    color: var(--ink-2);
+    max-width: 38ch;
+  }
+  .hero-portrait {
+    width: 280px; height: 340px;
+    object-fit: cover;
+    background: var(--bg-alt);
+    filter: grayscale(0.15) contrast(1.02);
+    border-radius: 2px;
+  }
+  @media (max-width: 900px) {
+    .hero-portrait { width: 200px; height: 240px; }
+  }
+  .hero-stats {
+    margin-top: 48px;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--hair-soft);
+    padding-top: 20px;
+  }
+  .stat .v {
+    font-family: var(--serif-display);
+    font-size: clamp(28px, 3.4vw, 40px); line-height: 1; font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .stat .l {
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--ink-3); margin-top: 8px;
+  }
+  @media (max-width: 700px) {
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ---- CV download button ---- */
+  .cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 32px;
+    padding: 13px 22px;
+    border: 1px solid var(--ink);
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .18s ease, color .18s ease, padding .18s ease;
+  }
+  .cv-button:hover {
+    background: var(--ink);
+    color: var(--bg);
+    padding-right: 30px;
+  }
+  .cv-button .cv-meta {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    padding-left: 14px;
+    margin-left: 14px;
+    border-left: 1px solid var(--hair-soft);
+    transition: color .18s ease, border-color .18s ease;
+  }
+  .cv-button:hover .cv-meta {
+    color: #99a8b5;
+    border-left-color: rgba(255, 255, 255, 0.22);
+  }
+  .cv-button .cv-arrow {
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--accent);
+    margin-left: 14px;
+    transition: color .18s ease, transform .18s ease;
+  }
+  .cv-button:hover .cv-arrow {
+    color: #99a8b5;
+    transform: translateY(2px);
+  }
+  @media (max-width: 500px) {
+    .cv-button { font-size: 10px; padding: 11px 16px; }
+    .cv-button .cv-meta { padding-left: 10px; margin-left: 10px; }
+    .cv-button .cv-arrow { margin-left: 10px; }
+  }
+
+  /* ---- ABOUT ---- */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; gap: 30px; } }
+  .lede {
+    font-family: var(--serif-body);
+    font-size: 21px; line-height: 1.55; color: var(--ink);
+    max-width: var(--measure);
+    margin: 0;
+  }
+  .lede::first-letter {
+    font-family: var(--serif-display);
+    font-weight: 700; font-size: 4.6em; line-height: 0.85;
+    float: left; margin: 8px 12px -4px 0; color: var(--accent);
+  }
+  .about-body p {
+    margin: 0 0 18px;
+    font-size: 17px; line-height: 1.65;
+    color: var(--ink-2); max-width: var(--measure);
+  }
+  .pull {
+    margin: 40px 0 0;
+    padding-left: 18px;
+    border-left: 2px solid var(--accent);
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-size: 24px; line-height: 1.3;
+    color: var(--ink);
+    max-width: 36ch;
+  }
+
+  /* ---- EDUCATION timeline ---- */
+  .edu {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--hair-soft);
+  }
+  .edu:last-child { border-bottom: none; }
+  .edu .when {
+    font-family: var(--mono);
+    font-size: 12px; letter-spacing: 0.12em;
+    color: var(--ink-3); text-transform: uppercase;
+    padding-top: 8px;
+  }
+  .edu h3 {
+    font-family: var(--serif-display);
+    font-size: 26px; font-weight: 500;
+    margin: 0 0 4px;
+    letter-spacing: -0.005em; line-height: 1.15;
+  }
+  .edu .inst {
+    font-family: var(--serif-body);
+    font-style: italic; color: var(--ink-3);
+    font-size: 16px;
+  }
+  @media (max-width: 700px) {
+    .edu { grid-template-columns: 1fr; gap: 6px; }
+  }
+
+  /* ---- PROJECTS ---- */
+  .project {
+    border-top: 1px solid var(--hair);
+    padding: 70px 0;
+  }
+  .project:first-of-type { border-top: 0; padding-top: 20px; }
+  .project-head {
+    display: grid; grid-template-columns: 140px 1fr auto; gap: 28px;
+    align-items: baseline;
+    margin-bottom: 36px;
+  }
+  .project-head .pn {
+    font-family: var(--serif-display);
+    font-size: 80px; line-height: 0.9;
+    font-weight: 400; font-style: italic;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  .project-head h2 {
+    font-family: var(--serif-display);
+    font-weight: 500;
+    font-size: clamp(36px, 4.6vw, 60px);
+    line-height: 1.0; letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .project-head .when {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.16em;
+    color: var(--ink-3); text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .project-tagline {
+    margin: 0 0 0 168px;
+    font-family: var(--serif-body); font-style: italic;
+    font-size: 22px; line-height: 1.4; color: var(--ink-2);
+    max-width: 60ch;
+  }
+  @media (max-width: 800px) {
+    .project-head { grid-template-columns: 1fr; gap: 8px; }
+    .project-head .pn { font-size: 56px; }
+    .project-head .when { order: -1; }
+    .project-tagline { margin-left: 0; font-size: 18px; }
+  }
+
+  .project-body {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+    align-items: start;
+  }
+  .project.reverse .project-body { grid-template-columns: 1fr 1.4fr; }
+  .project.reverse .project-media { order: 2; }
+  @media (max-width: 900px) {
+    .project-body, .project.reverse .project-body { grid-template-columns: 1fr; gap: 28px; }
+    .project.reverse .project-media { order: 0; }
+  }
+
+  .project-media {
+    background: var(--bg-alt);
+    border: 1px solid var(--hair-soft);
+    overflow: hidden;
+    position: relative;
+  }
+  .project-media img {
+    width: 100%; height: auto; display: block;
+  }
+  .project-media .caption {
+    font-family: var(--mono);
+    font-size: 10px; letter-spacing: 0.14em;
+    color: var(--ink-3); text-transform: uppercase;
+    padding: 10px 14px;
+    border-top: 1px solid var(--hair-soft);
+    background: #fff;
+  }
+  .project-media + .project-media { margin-top: 16px; }
+
+  .project-copy h4 {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  .project-copy h4:not(:first-child) { margin-top: 28px; }
+  .project-copy p {
+    margin: 0 0 14px;
+    font-size: 17px; line-height: 1.65;
+    color: var(--ink-2);
+  }
+  .project-copy p strong { color: var(--ink); font-weight: 600; }
+  .project-copy ul {
+    margin: 0; padding-left: 0; list-style: none;
+  }
+  .project-copy ul li {
+    padding-left: 22px; position: relative;
+    margin-bottom: 10px;
+    font-size: 16px; line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .project-copy ul li::before {
+    content: "§"; position: absolute; left: 0; top: 0;
+    color: var(--accent); font-family: var(--serif-display);
+    font-style: italic;
+  }
+
+  .tagrow { margin-top: 4px; }
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.04em;
+    padding: 4px 10px; margin: 4px 6px 0 0;
+    border: 1px solid var(--hair);
+    color: var(--ink-2);
+    background: #fff;
+    border-radius: 0;
+  }
+  .tag:hover { background: var(--ink); color: var(--bg); }
+
+  .resources {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--hair-soft);
+    display: grid; gap: 8px;
+  }
+  .resources a {
+    display: flex; gap: 12px; align-items: baseline;
+    font-family: var(--mono); font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--ink-2);
+    padding: 6px 0;
+    border-bottom: 1px dotted var(--hair-soft);
+    transition: color .15s, padding .15s;
+  }
+  .resources a:hover { color: var(--accent); padding-left: 6px; }
+  .resources a .rk {
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-4);
+    flex: 0 0 90px;
+  }
+  .resources a .rl { flex: 1; }
+  .resources a .ra { color: var(--accent); }
+
+  /* ---- SKILLS ---- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 56px;
+  }
+  @media (max-width: 800px) { .skills-grid { grid-template-columns: 1fr; gap: 30px; } }
+  .skill-cat h4 {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+    margin: 0 0 10px;
+    border-bottom: 1px solid var(--hair-soft);
+    padding-bottom: 8px;
+  }
+  .skill-cat p {
+    font-family: var(--serif-body);
+    font-size: 17px; line-height: 1.55;
+    color: var(--ink-2);
+    margin: 0;
+  }
+  .skill-cat p em { color: var(--ink); font-style: italic; }
+
+  /* ---- LANGUAGES + CONTACT ---- */
+  .colophon {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 70px 0 50px;
+    margin-top: 60px;
+  }
+  .colophon h2 {
+    font-family: var(--serif-display);
+    font-weight: 500;
+    font-size: clamp(40px, 6vw, 84px);
+    line-height: 0.95; letter-spacing: -0.02em;
+    margin: 0 0 30px;
+  }
+  .colophon h2 em { color: #99a8b5; font-style: italic; }
+  .colophon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+    border-top: 1px solid #2a2a2c;
+    padding-top: 28px;
+  }
+  @media (max-width: 800px) { .colophon-grid { grid-template-columns: 1fr; } }
+  .colophon-grid h4 {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #99a8b5; font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .colophon-grid a, .colophon-grid p {
+    color: #e6e6e4;
+    font-family: var(--serif-body);
+    font-size: 17px; line-height: 1.6;
+    margin: 0 0 8px;
+    display: block;
+  }
+  .colophon-grid a:hover { color: #fff; text-decoration: underline; }
+  .colophon-foot {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a2c;
+    display: flex; justify-content: space-between;
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-4);
+  }
+  @media (max-width: 600px) { .colophon-foot { flex-direction: column; gap: 8px; } }
+</style>
+</head>
+<body>
+
+<!-- =============================================================
+     RIBBON / TOP NAV
+     ============================================================= -->
+<header class="ribbon">
+  <div class="wrap ribbon-inner">
+    <a href="#top" class="mark" aria-label="Inicio del portafolio">
+      <span class="seal" aria-hidden="true">JG</span>
+      <span>Jorge Galán-Mena</span>
+    </a>
+    <nav class="ribbon-nav" aria-label="Navegación principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#educacion">Educación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- =============================================================
+     HERO / MASTHEAD
+     ============================================================= -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="wrap">
+    <div class="hero-meta">
+      <span>Portafolio · Mayo 2026</span>
+      <span>Vol. I · No. 1</span>
+      <span>Quito, Ecuador</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="hero-name" id="hero-name">Jorge<br/>Galán<span class="amp" aria-hidden="true">·</span>Mena</h1>
+        <p class="hero-tag">
+          Especialista en inteligencia artificial aplicada y gestión del conocimiento, con más de diez años construyendo sistemas en producción sobre ontologías, modelos de lenguaje y grafos de conocimiento.
+        </p>
+        <a class="cv-button" href="assets/cv/cv.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Descargar currículum vitae en PDF, 186 kilobytes">
+          <span>Descargar CV</span>
+          <span class="cv-meta">PDF · 186 kB</span>
+          <span class="cv-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <img class="hero-portrait" src="assets/profile/jorge_galan.png" alt="Retrato de Jorge Galán-Mena" width="280" height="340" />
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><div class="v">10+</div><div class="l">Años de trayectoria</div></div>
+      <div class="stat"><div class="v">20+</div><div class="l">Publicaciones</div></div>
+      <div class="stat"><div class="v">05</div><div class="l">Proyectos seleccionados</div></div>
+      <div class="stat"><div class="v">Doctorando</div><div class="l">En curso · Univ. de Vigo</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     SOBRE MÍ
+     ============================================================= -->
+<section id="sobre" aria-labelledby="sobre-title">
+  <div class="wrap">
+    <div class="chapter">
+      <span class="num" aria-hidden="true">§ 01</span>
+      <h2 class="title" id="sobre-title">Sobre mí</h2>
+      <span class="sub">Bio · contexto · líneas de trabajo</span>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <p class="lede">
+          Soy especialista en inteligencia artificial aplicada y gestión del conocimiento en instituciones de educación superior e industria, con más de diez años de trayectoria. Mi experiencia está respaldada por mi participación en SIRO, la conducción técnica del ecosistema CREAMINKA durante seis años, la gestión del conocimiento del ecosistema de investigación en la PUCE mediante técnicas de IA, y el desarrollo de módulos inteligentes para el scouting tecnológico de la industria española en la Universidad de Vigo.
+        </p>
+        <p class="pull">
+          “Soluciones de IA que no solo sean precisas, sino también explicables, gobernables y útiles para la toma de decisiones.”
+        </p>
+      </div>
+      <div class="about-body">
+        <p>
+          A lo largo de este recorrido he construido y mantenido sistemas en producción basados en ontologías, modelos de lenguaje, embeddings y modelado de conocimiento, además de publicar más de veinte artículos científicos en revistas de alto impacto y congresos internacionales.
+        </p>
+        <p>
+          En el ámbito académico curso el <strong>Doctorado en Tecnologías de la Información y las Comunicaciones</strong> en la Universidad de Vigo; soy Máster en Análisis y Visualización de Datos Masivos por la Universidad Internacional de la Rioja e Ingeniero de Sistemas por la Universidad Politécnica Salesiana.
+        </p>
+        <p>
+          Mis líneas más recientes giran en torno a la <strong>deduplicación gobernada de entidades</strong>, la recomendación semántica y el análisis de tópicos con LLMs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     EDUCACIÓN
+     ============================================================= -->
+<section id="educacion" aria-labelledby="educacion-title">
+  <div class="wrap">
+    <div class="chapter">
+      <span class="num" aria-hidden="true">§ 02</span>
+      <h2 class="title" id="educacion-title">Educación</h2>
+      <span class="sub">4 entradas · 2011 — actualidad</span>
+    </div>
+
+    <article class="edu">
+      <div class="when">Oct 2023 — Actualidad</div>
+      <div>
+        <h3>Doctorado en Tecnologías de la Información y las Comunicaciones</h3>
+        <div class="inst">Universidad de Vigo · Vigo, España</div>
+      </div>
+    </article>
+
+    <article class="edu">
+      <div class="when">Oct 2018 — Nov 2019</div>
+      <div>
+        <h3>Máster en Análisis y Visualización de Datos Masivos</h3>
+        <div class="inst">Universidad Internacional de la Rioja · UNIR</div>
+      </div>
+    </article>
+
+    <article class="edu">
+      <div class="when">Abr 2022 — Sep 2022</div>
+      <div>
+        <h3>Diplomado virtual BPM para la transformación digital de procesos</h3>
+        <div class="inst">Pontificia Universidad Javeriana · Colombia</div>
+      </div>
+    </article>
+
+    <article class="edu">
+      <div class="when">Sep 2011 — Feb 2017</div>
+      <div>
+        <h3>Ingeniero de Sistemas, mención en informática para la gestión</h3>
+        <div class="inst">Universidad Politécnica Salesiana · Ecuador</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =============================================================
+     PROYECTOS
+     ============================================================= -->
+<section id="proyectos" aria-labelledby="proyectos-title">
+  <div class="wrap">
+    <div class="chapter">
+      <span class="num" aria-hidden="true">§ 03</span>
+      <h2 class="title" id="proyectos-title">Proyectos</h2>
+      <span class="sub">Cinco · 2015 — 2026</span>
+    </div>
+
+    <!-- 01 — ONTODUP -->
+    <article class="project">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">01</div>
+        <h2>OntoDup</h2>
+        <div class="when">2024 — 2026 · Primer autor</div>
+      </header>
+      <p class="project-tagline">
+        Deduplicación gobernada de entidades en grafos de conocimiento académico.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_ontodup.png" alt="Captura de OntoDup, grafo de conocimiento con aserciones gobernadas" loading="lazy" />
+          <div class="caption">Fig. 1 — Aserción gobernada con procedencia y evidencia</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Pipeline de coincidencia de entidades para grafos de conocimiento académico que, en lugar de insertar enlaces directos, representa cada decisión de fusión como una <strong>aserción gobernada</strong> con estado, evidencia, procedencia y metadatos operacionales. El enfoque incorpora explícitamente principios de gobernanza y trazabilidad sobre los resultados de matching, alineado con las exigencias de IA explicable y auditable.
+          </p>
+          <h4>Arquitectura</h4>
+          <p>
+            Cuatro capas: ontológica (vocabularios en RDF/Turtle), reglas en formato <code>.pie</code> para materializar enlaces gobernados, generación y evaluación de pares candidatos con múltiples matchers, y capa de gobierno que produce aserciones con metadatos de proveniencia. Evaluado sobre <strong>DBLP–ACM</strong> y <strong>DBLP–Scholar</strong> con cuatro flujos reproducibles.
+          </p>
+          <h4>Resultado</h4>
+          <p>
+            Dataset experimental publicado en Zenodo: <strong>1.4 GB en N-Quads</strong> con resultados sobre cuatro configuraciones, licenciado CC BY 4.0 para reproducibilidad e inspección basada en grafos.
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">GraphDB</span>
+            <span class="tag">OntoRefine</span><span class="tag">VIVO</span><span class="tag">Ditto</span>
+            <span class="tag">DeepBlocker</span><span class="tag">fastText</span><span class="tag">OpenAI API</span>
+            <span class="tag">RDF/Turtle</span>
+          </div>
+          <div class="resources">
+            <a href="https://doi.org/10.3390/info17040325" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Paper</span><span class="rl"><em>Information 17(4), 325</em> — Galán-Mena et al. (2026)</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/jgalanm07/ontodup" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Código</span><span class="rl">github.com/jgalanm07/ontodup</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://doi.org/10.5281/zenodo.18972541" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Dataset</span><span class="rl">Zenodo · 1.4 GB · CC BY 4.0</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 — SOCIAL MEDIA TOPIC MODELING -->
+    <article class="project reverse">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">02</div>
+        <h2>Social Media Topic Modeling</h2>
+        <div class="when">Ene — Oct 2025 · Co-autor</div>
+      </header>
+      <p class="project-tagline">
+        Discurso político en redes sociales durante las elecciones de Ecuador 2025.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_social_media.png" alt="Pipeline de BERTopic con clusters temáticos" loading="lazy" />
+          <div class="caption">Fig. 2 — Pipeline BERTopic y visualización de clusters</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Estudio sobre el discurso político difundido en redes sociales por medios de comunicación ecuatorianos durante el ciclo electoral de 2025. Combina recolección sistemática en cuatro plataformas, modelado de tópicos con <strong>BERTopic</strong> y análisis de evolución temporal de las narrativas dominantes.
+          </p>
+          <h4>Aproximación</h4>
+          <p>
+            Recolección de <strong>8.174 publicaciones</strong> de Facebook, Instagram, X y TikTok provenientes de 48 cuentas de medios ecuatorianos, entre el 1 de enero y el 29 de junio de 2025, incluyendo métricas de interacción (reacciones, comentarios, compartidos, visualizaciones).
+          </p>
+          <h4>Resultado</h4>
+          <p>
+            Corpus público de 8.174 posts con clusters temáticos y evolución temporal, publicado en Zenodo (76.5 MB, CC BY 4.0). Presentado en <strong>ETCM 2025</strong> (Quito) y publicado en las actas de IEEE.
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">BERTopic</span><span class="tag">sentence-transformers</span>
+            <span class="tag">UMAP</span><span class="tag">HDBSCAN</span><span class="tag">pandas</span>
+          </div>
+          <div class="resources">
+            <a href="https://doi.org/10.1109/ETCM67548.2025.11304475" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Paper</span><span class="rl">IEEE ETCM 2025 — Pazmiño-Villamarín et al.</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://doi.org/10.5281/zenodo.17012998" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Dataset</span><span class="rl">Zenodo · 76.5 MB · CC BY 4.0</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 — COWORKING -->
+    <article class="project">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">03</div>
+        <h2>Coworking StartUPS</h2>
+        <div class="when">2018 — 2020 · Desarrollador</div>
+      </header>
+      <p class="project-tagline">
+        Plataforma web del Ecosistema de Emprendimiento de la Universidad Politécnica Salesiana.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_coworking_1.png" alt="Vista del portal Coworking StartUPS" loading="lazy" />
+          <div class="caption">Fig. 3 — Vista del portal · Speed Mentoring</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Punto de entrada para estudiantes, docentes y emprendedores universitarios al sistema de coworking, bootcamps y proyectos de innovación de la universidad. Integrada con el ecosistema CREAMINKA para gestión de competencias y participación en proyectos.
+          </p>
+          <h4>Aproximación</h4>
+          <p>
+            Aplicación web en la nube, con backend de servicios y modelo de datos semántico que articula a los participantes con eventos, proyectos y módulos de evaluación de competencias. Soporta los eventos <strong>reCREATE</strong> y <strong>rETHOS</strong>.
+          </p>
+          <h4>Resultado</h4>
+          <p>
+            Plataforma desplegada en producción y operativa desde 2020 en <code>coworking.ups.edu.ec</code>. Soporte continuo a los eventos anuales de emprendimiento universitario.
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Angular</span><span class="tag">Google Cloud Platform</span><span class="tag">Ontologías</span>
+          </div>
+        </div>
+        <div class="project-media" style="grid-column: 1 / span 2; margin-top: 12px;">
+          <img src="assets/projects/proyecto_coworking_2.png" alt="Red de participantes — visualización del coworking" loading="lazy" />
+          <div class="caption">Fig. 4 — Red de participantes · mentores · administradores</div>
+        </div>
+        <div class="project-copy" style="grid-column: 1 / span 2; margin-top: 0;">
+          <div class="resources">
+            <a href="https://coworking.ups.edu.ec/home" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Sitio</span><span class="rl">coworking.ups.edu.ec</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 — CREAMINKA -->
+    <article class="project reverse">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">04</div>
+        <h2>CREAMINKA</h2>
+        <div class="when">May 2017 — Dic 2023 · Conductor técnico</div>
+      </header>
+      <p class="project-tagline">
+        Ecosistema inteligente de gestión del conocimiento y la investigación universitaria.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_creaminka.png" alt="Modelo ontológico del ecosistema CREAMINKA" loading="lazy" />
+          <div class="caption">Fig. 5 — Modelo de evaluación de competencias · ontología CO</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Ecosistema integral para acelerar la producción de conocimiento, valorizar la investigación y facilitar la identificación de colaboradores potenciales en universidades, mediante ontologías e inteligencia artificial. <strong>Pieza ancla</strong> de mi trayectoria: atravesó publicaciones, capítulos de libro y despliegues operativos durante más de seis años en la UPS.
+          </p>
+          <h4>Arquitectura</h4>
+          <p>
+            Cuatro capas: sistema transaccional StartUPS para datos de agentes y competencias; componente de microservicios para parser, autenticación, CRUD, reportes y análisis; repositorio de tripletas RDF que modela el conocimiento del ecosistema; y aplicaciones móvil y web como interfaz de usuario. Incluye un <strong>modelo de evaluación de competencias en cuatro niveles</strong> con autoevaluación, coevaluación y heteroevaluación, y minería sobre SCOPUS y Science Direct.
+          </p>
+          <h4>Resultado</h4>
+          <ul>
+            <li>Análisis sostenido sobre más de <strong>17.000 tuplas</strong> de la base ontológica.</li>
+            <li>Generación automática de gráficos de resiliencia y reportes para vicerrectorado.</li>
+            <li>Identificación de perfiles competenciales similares entre estudiantes de carreras distintas.</li>
+            <li>Capítulo en IntechOpen con más de <strong>1.300 descargas</strong> registradas.</li>
+          </ul>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Ontologías</span><span class="tag">RDF</span><span class="tag">SPARQL</span>
+            <span class="tag">FOAF</span><span class="tag">BIBO</span><span class="tag">VIVO</span><span class="tag">BFO</span>
+            <span class="tag">Microservicios</span><span class="tag">Clustering</span><span class="tag">Inferencia</span>
+          </div>
+          <div class="resources">
+            <a href="https://www.intechopen.com/chapters/59084" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Capítulo</span><span class="rl"><em>Management of Information Systems</em> — IntechOpen (2018)</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://link.springer.com/chapter/10.1007/978-3-319-66562-7_9" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Paper</span><span class="rl">Colombian Conference on Computing (2017)</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 — SIRO -->
+    <article class="project">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">05</div>
+        <h2>SIRO</h2>
+        <div class="when">Oct 2015 — Jun 2017 · Desarrollador</div>
+      </header>
+      <p class="project-tagline">
+        Sistema robótico inteligente de soporte a la terapia para niños con TEA.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_siro.png" alt="Asistente robótico SIRO con la Fundación CIMA" loading="lazy" />
+          <div class="caption">Fig. 6 — Asistente robótico instrumentado · Fundación CIMA</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Sistema integral de apoyo tecnológico para el diagnóstico y la intervención de niños con <strong>Trastorno del Espectro Autista</strong>, desarrollado con la Fundación CIMA. Mi primera incursión profesional en la integración de ontologías con tecnologías de asistencia.
+          </p>
+          <h4>Aproximación</h4>
+          <p>
+            Arquitectura híbrida con tres componentes: herramientas móviles para terapistas y familias, sala multisensorial instrumentada para sesiones de intervención, y asistente robótico para tareas de mediación. El conocimiento sobre pacientes, terapias e instrumentos se estructura mediante ontologías que permiten razonamiento sobre el progreso y planificación de actividades.
+          </p>
+          <h4>Impacto</h4>
+          <p>
+            Población beneficiaria: niños con TEA, familias y equipos multidisciplinarios de Educación Especial, Estimulación Temprana, Terapia de Lenguaje y Psicología. Publicaciones derivadas en <strong>IEEE ARGENCON 2016</strong> (Buenos Aires) y <strong>CONIITI 2018</strong> (Bogotá).
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Ontologías</span><span class="tag">Plataforma web</span><span class="tag">Apps móviles</span>
+            <span class="tag">Sala multisensorial</span><span class="tag">Robótica</span><span class="tag">Diseño 3D</span>
+          </div>
+          <div class="resources">
+            <a href="https://catedraunescoinclusion.org/descargas/dispositivos-electronicos/siro/" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Sitio</span><span class="rl">Cátedra UNESCO Inclusión · SIRO</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =============================================================
+     HABILIDADES
+     ============================================================= -->
+<section id="habilidades" aria-labelledby="habilidades-title">
+  <div class="wrap">
+    <div class="chapter">
+      <span class="num" aria-hidden="true">§ 04</span>
+      <h2 class="title" id="habilidades-title">Habilidades</h2>
+      <span class="sub">Stack técnico · áreas de práctica</span>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h4>Inteligencia Artificial</h4>
+        <p>Ontologías, modelos de lenguaje grandes <em>(LLMs)</em>, embeddings, ingeniería de prompts, algoritmos de clasificación de texto, clustering y análisis de redes sociales.</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Frameworks &amp; NLP</h4>
+        <p>LangChain, BERTopic, LDA, HuggingFace transformers, OpenAI / GPT.</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Lenguajes</h4>
+        <p>Python, R, Java, JavaScript.</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Plataformas en la nube</h4>
+        <p>Google Cloud Platform, Microsoft Azure, Firebase, Algolia.</p>
+      </div>
+      <div class="skill-cat">
+        <h4>Bases de datos</h4>
+        <p>PostgreSQL, Oracle, MongoDB, GraphDB, Firestore, SQLite.</p>
+      </div>
+      <div class="skill-cat">
+        <h4>BI &amp; visualización</h4>
+        <p>Tableau, Power BI, Looker Studio. Modelado de procesos con Visio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     COLOPHON — CONTACTO + IDIOMAS
+     ============================================================= -->
+<footer id="contacto" class="colophon" aria-labelledby="contacto-title">
+  <div class="wrap">
+    <h2 id="contacto-title">Hablemos<em>.</em></h2>
+
+    <div class="colophon-grid">
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:jgalan07@gmail.com">jgalan07@gmail.com</a>
+        <p>Quito, Ecuador · UTC-5</p>
+      </div>
+      <div>
+        <h4>Profesional</h4>
+        <a href="https://www.linkedin.com/in/jorge-gal%C3%A1n-mena-88b06573/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/jgalanm07" target="_blank" rel="noopener noreferrer">GitHub · jgalanm07</a>
+      </div>
+      <div>
+        <h4>Académico</h4>
+        <a href="https://scholar.google.com/citations?user=SMTMbUMAAAAJ&amp;hl=es" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-6027-9854" target="_blank" rel="noopener noreferrer">ORCID · 0000-0002-6027-9854</a>
+      </div>
+    </div>
+
+    <div class="colophon-grid" style="margin-top: 40px;">
+      <div>
+        <h4>Idiomas</h4>
+        <p>Español — lengua materna</p>
+        <p>Inglés — nivel B1 (MCER)</p>
+      </div>
+      <div>
+        <h4>Disponibilidad</h4>
+        <p>Investigación aplicada, consultoría en IA, colaboraciones académicas y proyectos de gestión del conocimiento.</p>
+      </div>
+      <div>
+        <h4>Colofón</h4>
+        <p>Tipografía: Playfair Display · Source Serif 4 · JetBrains Mono. Construido y publicado en GitHub Pages.</p>
+      </div>
+    </div>
+
+    <div class="colophon-foot">
+      <span>© 2026 Jorge Galán-Mena</span>
+      <span>Mayo MMXXVI · Quito</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
