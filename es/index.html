@@ -1,38 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jorge Galán-Mena · Portfolio</title>
-<meta name="description" content="Portfolio of Jorge Andrés Galán Mena — specialist in applied artificial intelligence and knowledge management. Quito, Ecuador." />
-<meta property="og:title" content="Jorge Galán-Mena · Portfolio" />
-<meta property="og:description" content="Specialist in applied artificial intelligence and knowledge management. Quito, Ecuador." />
+<title>Jorge Galán-Mena · Portafolio</title>
+<meta name="description" content="Portafolio de Jorge Andrés Galán Mena — especialista en inteligencia artificial aplicada y gestión del conocimiento. Quito, Ecuador." />
+<meta property="og:title" content="Jorge Galán-Mena · Portafolio" />
+<meta property="og:description" content="Especialista en inteligencia artificial aplicada y gestión del conocimiento. Quito, Ecuador." />
 <meta property="og:type" content="profile" />
-<meta property="og:url" content="https://jgalanm07.github.io/jgalanm/" />
+<meta property="og:url" content="https://jgalanm07.github.io/jgalanm/es/" />
 <meta property="og:image" content="https://jgalanm07.github.io/jgalanm/assets/profile/jorge_galan.png" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="canonical" href="https://jgalanm07.github.io/jgalanm/" />
-<link rel="alternate" hreflang="en" href="https://jgalanm07.github.io/jgalanm/" />
+<link rel="canonical" href="https://jgalanm07.github.io/jgalanm/es/" />
 <link rel="alternate" hreflang="es" href="https://jgalanm07.github.io/jgalanm/es/" />
+<link rel="alternate" hreflang="en" href="https://jgalanm07.github.io/jgalanm/" />
 <link rel="alternate" hreflang="x-default" href="https://jgalanm07.github.io/jgalanm/" />
-
-<script>
-  // First-visit language detection: if user has no stored preference
-  // and browser locale is Spanish, redirect once to /es/.
-  // Uses location.replace so the back button is not polluted.
-  (function(){
-    try {
-      if (localStorage.getItem('jg-lang')) return;
-      var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
-      if (nav.indexOf('es') === 0) {
-        localStorage.setItem('jg-lang', 'es');
-        location.replace('es/');
-      }
-    } catch (e) { /* localStorage may be disabled — no-op */ }
-  })();
-</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +24,7 @@
 
 <style>
   :root {
-    /* Palette — pure white + ink black + deep marine accent.
+    /* Palette — pure white + ink black + deep burgundy accent.
        No beige anywhere. Subtle cool gray for hairlines / muted text. */
     --bg: #ffffff;
     --bg-alt: #f6f6f5;
@@ -110,7 +94,7 @@
     display: grid; place-items: center;
     font-family: var(--serif-display); font-weight: 700; font-size: 12px;
   }
-  .ribbon-nav { display: flex; gap: 26px; align-items: center; }
+  .ribbon-nav { display: flex; gap: 26px; }
   .ribbon-nav a { color: var(--ink-3); transition: color .15s; }
   .ribbon-nav a:hover { color: var(--accent); }
   @media (max-width: 700px) {
@@ -592,20 +576,20 @@
      ============================================================= -->
 <header id="top" class="ribbon">
   <div class="wrap ribbon-inner">
-    <a href="#top" class="mark" aria-label="Portfolio home">
+    <a href="#top" class="mark" aria-label="Inicio del portafolio">
       <span class="seal" aria-hidden="true">JG</span>
       <span>Jorge Galán-Mena</span>
     </a>
-    <nav class="ribbon-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <div class="lang-switcher" role="group" aria-label="Choose language">
-        <a href="es/" hreflang="es" lang="es">ES</a>
+    <nav class="ribbon-nav" aria-label="Navegación principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#educacion">Educación</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+      <div class="lang-switcher" role="group" aria-label="Idioma">
+        <span aria-current="page">ES</span>
         <span class="lang-sep" aria-hidden="true">·</span>
-        <span aria-current="page">EN</span>
+        <a href="../" hreflang="en" lang="en">EN</a>
       </div>
     </nav>
   </div>
@@ -619,7 +603,7 @@
 <section class="hero" aria-labelledby="hero-name">
   <div class="wrap">
     <div class="hero-meta">
-      <span>Portfolio · May 2026</span>
+      <span>Portafolio · Mayo 2026</span>
       <span>Vol. I · No. 1</span>
       <span>Quito, Ecuador</span>
     </div>
@@ -628,55 +612,55 @@
       <div>
         <h1 class="hero-name" id="hero-name" aria-label="Jorge Galán-Mena">Jorge<br/>Galán<span class="amp" aria-hidden="true">·</span>Mena</h1>
         <p class="hero-tag">
-          Specialist in applied artificial intelligence and knowledge management, with over a decade building production systems on ontologies, language models, and knowledge graphs.
+          Especialista en inteligencia artificial aplicada y gestión del conocimiento, con más de diez años construyendo sistemas en producción sobre ontologías, modelos de lenguaje y grafos de conocimiento.
         </p>
-        <a class="cv-button" href="assets/cv/cv.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Download CV as PDF, 186 kilobytes">
-          <span>Download CV</span>
+        <a class="cv-button" href="../assets/cv/cv.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Descargar currículum vitae en PDF, 186 kilobytes">
+          <span>Descargar CV</span>
           <span class="cv-meta">PDF · 186 kB</span>
           <span class="cv-arrow" aria-hidden="true">↓</span>
         </a>
       </div>
-      <img class="hero-portrait" src="assets/profile/jorge_galan.png" alt="Portrait of Jorge Galán-Mena" width="280" height="340" />
+      <img class="hero-portrait" src="../assets/profile/jorge_galan.png" alt="Retrato de Jorge Galán-Mena" width="280" height="340" />
     </div>
 
-    <div class="hero-stats" aria-label="Career highlights">
-      <div class="stat"><div class="v">10+</div><div class="l">Years of experience</div></div>
-      <div class="stat"><div class="v">20+</div><div class="l">Publications</div></div>
-      <div class="stat"><div class="v">05</div><div class="l">Selected projects</div></div>
-      <div class="stat"><div class="v">PhD candidate</div><div class="l">In progress · Univ. of Vigo</div></div>
+    <div class="hero-stats">
+      <div class="stat"><div class="v">10+</div><div class="l">Años de trayectoria</div></div>
+      <div class="stat"><div class="v">20+</div><div class="l">Publicaciones</div></div>
+      <div class="stat"><div class="v">05</div><div class="l">Proyectos seleccionados</div></div>
+      <div class="stat"><div class="v">Doctorando</div><div class="l">En curso · Univ. de Vigo</div></div>
     </div>
   </div>
 </section>
 
 <!-- =============================================================
-     ABOUT
+     SOBRE MÍ
      ============================================================= -->
-<section id="about" aria-labelledby="about-title">
+<section id="sobre" aria-labelledby="sobre-title">
   <div class="wrap">
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 01</span>
-      <h2 class="title" id="about-title">About</h2>
-      <span class="sub">Bio · context · areas of work</span>
+      <h2 class="title" id="sobre-title">Sobre mí</h2>
+      <span class="sub">Bio · contexto · líneas de trabajo</span>
     </div>
 
     <div class="about-grid">
       <div>
         <p class="lede">
-          I am a specialist in applied artificial intelligence and knowledge management in higher education and industry, with more than ten years of experience. My track record is anchored in my work on SIRO, six years as technical lead of the CREAMINKA ecosystem, the AI-driven knowledge management of PUCE's research ecosystem, and the development of intelligent modules for technology scouting of Spanish industry at the Universidad de Vigo.
+          Soy especialista en inteligencia artificial aplicada y gestión del conocimiento en instituciones de educación superior e industria, con más de diez años de trayectoria. Mi experiencia está respaldada por mi participación en SIRO, la conducción técnica del ecosistema CREAMINKA durante seis años, la gestión del conocimiento del ecosistema de investigación en la PUCE mediante técnicas de IA, y el desarrollo de módulos inteligentes para el scouting tecnológico de la industria española en la Universidad de Vigo.
         </p>
         <p class="pull">
-          “AI solutions that are not only accurate, but also explainable, governable, and useful for decision-making.”
+          “Soluciones de IA que no solo sean precisas, sino también explicables, gobernables y útiles para la toma de decisiones.”
         </p>
       </div>
       <div class="about-body">
         <p>
-          Throughout this journey I have built and maintained production systems grounded in ontologies, language models, embeddings, and knowledge modeling, while publishing more than twenty scientific articles in high-impact journals and international conferences.
+          A lo largo de este recorrido he construido y mantenido sistemas en producción basados en ontologías, modelos de lenguaje, embeddings y modelado de conocimiento, además de publicar más de veinte artículos científicos en revistas de alto impacto y congresos internacionales.
         </p>
         <p>
-          On the academic side, I am pursuing a <strong>PhD in Information and Communication Technologies</strong> at the Universidad de Vigo; I hold a Master's in Big Data Analytics and Visualization from the Universidad Internacional de la Rioja and a Systems Engineering degree from the Universidad Politécnica Salesiana.
+          En el ámbito académico curso el <strong>Doctorado en Tecnologías de la Información y las Comunicaciones</strong> en la Universidad de Vigo; soy Máster en Análisis y Visualización de Datos Masivos por la Universidad Internacional de la Rioja e Ingeniero de Sistemas por la Universidad Politécnica Salesiana.
         </p>
         <p>
-          My most recent lines of work revolve around <strong>governed entity deduplication</strong>, semantic recommendation, and topic analysis with LLMs.
+          Mis líneas más recientes giran en torno a la <strong>deduplicación gobernada de entidades</strong>, la recomendación semántica y el análisis de tópicos con LLMs.
         </p>
       </div>
     </div>
@@ -684,36 +668,36 @@
 </section>
 
 <!-- =============================================================
-     EDUCATION
+     EDUCACIÓN
      ============================================================= -->
-<section id="education" aria-labelledby="education-title">
+<section id="educacion" aria-labelledby="educacion-title">
   <div class="wrap">
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 02</span>
-      <h2 class="title" id="education-title">Education</h2>
-      <span class="sub">4 entries · 2011 — present</span>
+      <h2 class="title" id="educacion-title">Educación</h2>
+      <span class="sub">4 entradas · 2011 — actualidad</span>
     </div>
 
     <article class="edu">
-      <div class="when">Oct 2023 — Present</div>
+      <div class="when">Oct 2023 — Actualidad</div>
       <div>
-        <h3>PhD in Information and Communication Technologies</h3>
-        <div class="inst">Universidad de Vigo · Vigo, Spain</div>
+        <h3>Doctorado en Tecnologías de la Información y las Comunicaciones</h3>
+        <div class="inst">Universidad de Vigo · Vigo, España</div>
       </div>
     </article>
 
     <article class="edu">
       <div class="when">Oct 2018 — Nov 2019</div>
       <div>
-        <h3>Master's in Big Data Analytics and Visualization</h3>
+        <h3>Máster en Análisis y Visualización de Datos Masivos</h3>
         <div class="inst">Universidad Internacional de la Rioja · UNIR</div>
       </div>
     </article>
 
     <article class="edu">
-      <div class="when">Apr 2022 — Sep 2022</div>
+      <div class="when">Abr 2022 — Sep 2022</div>
       <div>
-        <h3>Online postgraduate diploma in BPM for digital process transformation</h3>
+        <h3>Diplomado virtual BPM para la transformación digital de procesos</h3>
         <div class="inst">Pontificia Universidad Javeriana · Colombia</div>
       </div>
     </article>
@@ -721,7 +705,7 @@
     <article class="edu">
       <div class="when">Sep 2011 — Feb 2017</div>
       <div>
-        <h3>Systems Engineer, specialization in Management Information Systems</h3>
+        <h3>Ingeniero de Sistemas, mención en informática para la gestión</h3>
         <div class="inst">Universidad Politécnica Salesiana · Ecuador</div>
       </div>
     </article>
@@ -729,14 +713,14 @@
 </section>
 
 <!-- =============================================================
-     PROJECTS
+     PROYECTOS
      ============================================================= -->
-<section id="projects" aria-labelledby="projects-title">
+<section id="proyectos" aria-labelledby="proyectos-title">
   <div class="wrap">
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 03</span>
-      <h2 class="title" id="projects-title">Projects</h2>
-      <span class="sub">Five · 2015 — 2026</span>
+      <h2 class="title" id="proyectos-title">Proyectos</h2>
+      <span class="sub">Cinco · 2015 — 2026</span>
     </div>
 
     <!-- 01 — ONTODUP -->
@@ -744,28 +728,28 @@
       <header class="project-head">
         <div class="pn" aria-hidden="true">01</div>
         <h3>OntoDup</h3>
-        <div class="when">2024 — 2026 · First author</div>
+        <div class="when">2024 — 2026 · Primer autor</div>
       </header>
       <p class="project-tagline">
-        Governed entity deduplication over academic knowledge graphs.
+        Deduplicación gobernada de entidades en grafos de conocimiento académico.
       </p>
       <div class="project-body">
         <div class="project-media">
-          <img src="assets/projects/proyecto_ontodup.png" alt="OntoDup screenshot — knowledge graph with governed assertions" loading="lazy" />
-          <div class="caption">Fig. 1 — Governed assertion with provenance and evidence</div>
+          <img src="../assets/projects/proyecto_ontodup.png" alt="Captura de OntoDup, grafo de conocimiento con aserciones gobernadas" loading="lazy" />
+          <div class="caption">Fig. 1 — Aserción gobernada con procedencia y evidencia</div>
         </div>
         <div class="project-copy">
-          <h4>Description</h4>
+          <h4>Descripción</h4>
           <p>
-            An entity-matching pipeline for academic knowledge graphs that, rather than inserting direct links, represents every merge decision as a <strong>governed assertion</strong> carrying status, evidence, provenance, and operational metadata. The approach explicitly embeds principles of governance and traceability over matching results, aligned with the demands of explainable and auditable AI.
+            Pipeline de coincidencia de entidades para grafos de conocimiento académico que, en lugar de insertar enlaces directos, representa cada decisión de fusión como una <strong>aserción gobernada</strong> con estado, evidencia, procedencia y metadatos operacionales. El enfoque incorpora explícitamente principios de gobernanza y trazabilidad sobre los resultados de matching, alineado con las exigencias de IA explicable y auditable.
           </p>
-          <h4>Architecture</h4>
+          <h4>Arquitectura</h4>
           <p>
-            Four layers: an ontological layer (vocabularies in RDF/Turtle), a rules layer in <code>.pie</code> format that materializes governed links, a candidate-pair generation and evaluation layer with multiple matchers, and a governance layer that emits assertions with provenance metadata. Evaluated on <strong>DBLP–ACM</strong> and <strong>DBLP–Scholar</strong> across four reproducible workflows.
+            Cuatro capas: ontológica (vocabularios en RDF/Turtle), reglas en formato <code>.pie</code> para materializar enlaces gobernados, generación y evaluación de pares candidatos con múltiples matchers, y capa de gobierno que produce aserciones con metadatos de proveniencia. Evaluado sobre <strong>DBLP–ACM</strong> y <strong>DBLP–Scholar</strong> con cuatro flujos reproducibles.
           </p>
-          <h4>Result</h4>
+          <h4>Resultado</h4>
           <p>
-            Experimental dataset published on Zenodo: <strong>1.4 GB in N-Quads</strong> with results across four configurations, licensed CC BY 4.0 for reproducibility and graph-based inspection.
+            Dataset experimental publicado en Zenodo: <strong>1.4 GB en N-Quads</strong> con resultados sobre cuatro configuraciones, licenciado CC BY 4.0 para reproducibilidad e inspección basada en grafos.
           </p>
           <h4>Stack</h4>
           <div class="tagrow">
@@ -779,7 +763,7 @@
               <span class="rk">Paper</span><span class="rl"><em>Information 17(4), 325</em> — Galán-Mena et al. (2026)</span><span class="ra" aria-hidden="true">↗</span>
             </a>
             <a href="https://github.com/jgalanm07/ontodup" target="_blank" rel="noopener noreferrer">
-              <span class="rk">Code</span><span class="rl">github.com/jgalanm07/ontodup</span><span class="ra" aria-hidden="true">↗</span>
+              <span class="rk">Código</span><span class="rl">github.com/jgalanm07/ontodup</span><span class="ra" aria-hidden="true">↗</span>
             </a>
             <a href="https://doi.org/10.5281/zenodo.18972541" target="_blank" rel="noopener noreferrer">
               <span class="rk">Dataset</span><span class="rl">Zenodo · 1.4 GB · CC BY 4.0</span><span class="ra" aria-hidden="true">↗</span>
@@ -794,28 +778,28 @@
       <header class="project-head">
         <div class="pn" aria-hidden="true">02</div>
         <h3>Social Media Topic Modeling</h3>
-        <div class="when">Jan — Oct 2025 · Co-author</div>
+        <div class="when">Ene — Oct 2025 · Co-autor</div>
       </header>
       <p class="project-tagline">
-        Political discourse on social media during Ecuador's 2025 elections.
+        Discurso político en redes sociales durante las elecciones de Ecuador 2025.
       </p>
       <div class="project-body">
         <div class="project-media">
-          <img src="assets/projects/proyecto_social_media.png" alt="BERTopic pipeline with thematic clusters" loading="lazy" />
-          <div class="caption">Fig. 2 — BERTopic pipeline and cluster visualization</div>
+          <img src="../assets/projects/proyecto_social_media.png" alt="Pipeline de BERTopic con clusters temáticos" loading="lazy" />
+          <div class="caption">Fig. 2 — Pipeline BERTopic y visualización de clusters</div>
         </div>
         <div class="project-copy">
-          <h4>Description</h4>
+          <h4>Descripción</h4>
           <p>
-            A study of the political discourse circulated on social media by Ecuadorian news outlets during the 2025 electoral cycle. It combines systematic data collection across four platforms, topic modeling with <strong>BERTopic</strong>, and an analysis of how dominant narratives evolved over time.
+            Estudio sobre el discurso político difundido en redes sociales por medios de comunicación ecuatorianos durante el ciclo electoral de 2025. Combina recolección sistemática en cuatro plataformas, modelado de tópicos con <strong>BERTopic</strong> y análisis de evolución temporal de las narrativas dominantes.
           </p>
-          <h4>Approach</h4>
+          <h4>Aproximación</h4>
           <p>
-            Collection of <strong>8,174 posts</strong> from Facebook, Instagram, X, and TikTok drawn from 48 Ecuadorian media accounts, between January 1 and June 29, 2025, including engagement metrics (reactions, comments, shares, views).
+            Recolección de <strong>8.174 publicaciones</strong> de Facebook, Instagram, X y TikTok provenientes de 48 cuentas de medios ecuatorianos, entre el 1 de enero y el 29 de junio de 2025, incluyendo métricas de interacción (reacciones, comentarios, compartidos, visualizaciones).
           </p>
-          <h4>Result</h4>
+          <h4>Resultado</h4>
           <p>
-            Public corpus of 8,174 posts with thematic clusters and temporal evolution, released on Zenodo (76.5 MB, CC BY 4.0). Presented at <strong>ETCM 2025</strong> (Quito) and published in the IEEE proceedings.
+            Corpus público de 8.174 posts con clusters temáticos y evolución temporal, publicado en Zenodo (76.5 MB, CC BY 4.0). Presentado en <strong>ETCM 2025</strong> (Quito) y publicado en las actas de IEEE.
           </p>
           <h4>Stack</h4>
           <div class="tagrow">
@@ -839,42 +823,42 @@
       <header class="project-head">
         <div class="pn" aria-hidden="true">03</div>
         <h3>Coworking StartUPS</h3>
-        <div class="when">2018 — 2020 · Developer</div>
+        <div class="when">2018 — 2020 · Desarrollador</div>
       </header>
       <p class="project-tagline">
-        Web platform for the Entrepreneurship Ecosystem of the Universidad Politécnica Salesiana.
+        Plataforma web del Ecosistema de Emprendimiento de la Universidad Politécnica Salesiana.
       </p>
       <div class="project-body">
         <div class="project-media">
-          <img src="assets/projects/proyecto_coworking_1.png" alt="View of the Coworking StartUPS portal" loading="lazy" />
-          <div class="caption">Fig. 3 — Portal view · Speed Mentoring</div>
+          <img src="../assets/projects/proyecto_coworking_1.png" alt="Vista del portal Coworking StartUPS" loading="lazy" />
+          <div class="caption">Fig. 3 — Vista del portal · Speed Mentoring</div>
         </div>
         <div class="project-copy">
-          <h4>Description</h4>
+          <h4>Descripción</h4>
           <p>
-            The entry point for students, faculty, and university entrepreneurs into the university's coworking system, bootcamps, and innovation projects. Integrated with the CREAMINKA ecosystem for competency management and project participation.
+            Punto de entrada para estudiantes, docentes y emprendedores universitarios al sistema de coworking, bootcamps y proyectos de innovación de la universidad. Integrada con el ecosistema CREAMINKA para gestión de competencias y participación en proyectos.
           </p>
-          <h4>Approach</h4>
+          <h4>Aproximación</h4>
           <p>
-            A cloud-hosted web application with a services backend and a semantic data model that links participants to events, projects, and competency-evaluation modules. Supports the <strong>reCREATE</strong> and <strong>rETHOS</strong> events.
+            Aplicación web en la nube, con backend de servicios y modelo de datos semántico que articula a los participantes con eventos, proyectos y módulos de evaluación de competencias. Soporta los eventos <strong>reCREATE</strong> y <strong>rETHOS</strong>.
           </p>
-          <h4>Result</h4>
+          <h4>Resultado</h4>
           <p>
-            Platform deployed to production and live since 2020 at <code>coworking.ups.edu.ec</code>. Ongoing support for the university's annual entrepreneurship events.
+            Plataforma desplegada en producción y operativa desde 2020 en <code>coworking.ups.edu.ec</code>. Soporte continuo a los eventos anuales de emprendimiento universitario.
           </p>
           <h4>Stack</h4>
           <div class="tagrow">
-            <span class="tag">Angular</span><span class="tag">Google Cloud Platform</span><span class="tag">Ontologies</span>
+            <span class="tag">Angular</span><span class="tag">Google Cloud Platform</span><span class="tag">Ontologías</span>
           </div>
         </div>
         <div class="project-media" style="grid-column: 1 / span 2; margin-top: 12px;">
-          <img src="assets/projects/proyecto_coworking_2.png" alt="Network of participants — coworking visualization" loading="lazy" />
-          <div class="caption">Fig. 4 — Network of participants · mentors · administrators</div>
+          <img src="../assets/projects/proyecto_coworking_2.png" alt="Red de participantes — visualización del coworking" loading="lazy" />
+          <div class="caption">Fig. 4 — Red de participantes · mentores · administradores</div>
         </div>
         <div class="project-copy" style="grid-column: 1 / span 2; margin-top: 0;">
           <div class="resources">
             <a href="https://coworking.ups.edu.ec/home" target="_blank" rel="noopener noreferrer">
-              <span class="rk">Site</span><span class="rl">coworking.ups.edu.ec</span><span class="ra" aria-hidden="true">↗</span>
+              <span class="rk">Sitio</span><span class="rl">coworking.ups.edu.ec</span><span class="ra" aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -886,41 +870,41 @@
       <header class="project-head">
         <div class="pn" aria-hidden="true">04</div>
         <h3>CREAMINKA</h3>
-        <div class="when">May 2017 — Dec 2023 · Technical lead</div>
+        <div class="when">May 2017 — Dic 2023 · Conductor técnico</div>
       </header>
       <p class="project-tagline">
-        An intelligent ecosystem for managing university knowledge and research.
+        Ecosistema inteligente de gestión del conocimiento y la investigación universitaria.
       </p>
       <div class="project-body">
         <div class="project-media">
-          <img src="assets/projects/proyecto_creaminka.png" alt="Ontological model of the CREAMINKA ecosystem" loading="lazy" />
-          <div class="caption">Fig. 5 — Competency-evaluation model · CO ontology</div>
+          <img src="../assets/projects/proyecto_creaminka.png" alt="Modelo ontológico del ecosistema CREAMINKA" loading="lazy" />
+          <div class="caption">Fig. 5 — Modelo de evaluación de competencias · ontología CO</div>
         </div>
         <div class="project-copy">
-          <h4>Description</h4>
+          <h4>Descripción</h4>
           <p>
-            A comprehensive ecosystem designed to accelerate knowledge production, surface the value of research, and ease the identification of potential collaborators within universities, by way of ontologies and artificial intelligence. The <strong>cornerstone</strong> of my career: it spanned publications, book chapters, and operational deployments over more than six years at UPS.
+            Ecosistema integral para acelerar la producción de conocimiento, valorizar la investigación y facilitar la identificación de colaboradores potenciales en universidades, mediante ontologías e inteligencia artificial. <strong>Pieza ancla</strong> de mi trayectoria: atravesó publicaciones, capítulos de libro y despliegues operativos durante más de seis años en la UPS.
           </p>
-          <h4>Architecture</h4>
+          <h4>Arquitectura</h4>
           <p>
-            Four layers: a StartUPS transactional system for agent and competency data; a microservices component covering parser, authentication, CRUD, reporting, and analytics; an RDF triple store that models the ecosystem's knowledge; and mobile and web applications as the user interface. It includes a <strong>four-tier competency-evaluation model</strong> with self-, peer-, and external evaluation, plus mining over SCOPUS and Science Direct.
+            Cuatro capas: sistema transaccional StartUPS para datos de agentes y competencias; componente de microservicios para parser, autenticación, CRUD, reportes y análisis; repositorio de tripletas RDF que modela el conocimiento del ecosistema; y aplicaciones móvil y web como interfaz de usuario. Incluye un <strong>modelo de evaluación de competencias en cuatro niveles</strong> con autoevaluación, coevaluación y heteroevaluación, y minería sobre SCOPUS y Science Direct.
           </p>
-          <h4>Result</h4>
+          <h4>Resultado</h4>
           <ul>
-            <li>Sustained analysis over more than <strong>17,000 tuples</strong> in the ontological base.</li>
-            <li>Automated generation of resilience charts and reports for the Office of the Vice-Rector.</li>
-            <li>Identification of similar competency profiles across students from different programs.</li>
-            <li>An IntechOpen chapter with more than <strong>1,300 recorded downloads</strong>.</li>
+            <li>Análisis sostenido sobre más de <strong>17.000 tuplas</strong> de la base ontológica.</li>
+            <li>Generación automática de gráficos de resiliencia y reportes para vicerrectorado.</li>
+            <li>Identificación de perfiles competenciales similares entre estudiantes de carreras distintas.</li>
+            <li>Capítulo en IntechOpen con más de <strong>1.300 descargas</strong> registradas.</li>
           </ul>
           <h4>Stack</h4>
           <div class="tagrow">
-            <span class="tag">Ontologies</span><span class="tag">RDF</span><span class="tag">SPARQL</span>
+            <span class="tag">Ontologías</span><span class="tag">RDF</span><span class="tag">SPARQL</span>
             <span class="tag">FOAF</span><span class="tag">BIBO</span><span class="tag">VIVO</span><span class="tag">BFO</span>
-            <span class="tag">Microservices</span><span class="tag">Clustering</span><span class="tag">Inference</span>
+            <span class="tag">Microservicios</span><span class="tag">Clustering</span><span class="tag">Inferencia</span>
           </div>
           <div class="resources">
             <a href="https://www.intechopen.com/chapters/59084" target="_blank" rel="noopener noreferrer">
-              <span class="rk">Chapter</span><span class="rl"><em>Management of Information Systems</em> — IntechOpen (2018)</span><span class="ra" aria-hidden="true">↗</span>
+              <span class="rk">Capítulo</span><span class="rl"><em>Management of Information Systems</em> — IntechOpen (2018)</span><span class="ra" aria-hidden="true">↗</span>
             </a>
             <a href="https://link.springer.com/chapter/10.1007/978-3-319-66562-7_9" target="_blank" rel="noopener noreferrer">
               <span class="rk">Paper</span><span class="rl">Colombian Conference on Computing (2017)</span><span class="ra" aria-hidden="true">↗</span>
@@ -935,37 +919,37 @@
       <header class="project-head">
         <div class="pn" aria-hidden="true">05</div>
         <h3>SIRO</h3>
-        <div class="when">Oct 2015 — Jun 2017 · Developer</div>
+        <div class="when">Oct 2015 — Jun 2017 · Desarrollador</div>
       </header>
       <p class="project-tagline">
-        An intelligent robotic system supporting therapy for children on the autism spectrum.
+        Sistema robótico inteligente de soporte a la terapia para niños con TEA.
       </p>
       <div class="project-body">
         <div class="project-media">
-          <img src="assets/projects/proyecto_siro.png" alt="SIRO robotic assistant with Fundación CIMA" loading="lazy" />
-          <div class="caption">Fig. 6 — Instrumented robotic assistant · Fundación CIMA</div>
+          <img src="../assets/projects/proyecto_siro.png" alt="Asistente robótico SIRO con la Fundación CIMA" loading="lazy" />
+          <div class="caption">Fig. 6 — Asistente robótico instrumentado · Fundación CIMA</div>
         </div>
         <div class="project-copy">
-          <h4>Description</h4>
+          <h4>Descripción</h4>
           <p>
-            A comprehensive technological-support system for the diagnosis and intervention of children with <strong>Autism Spectrum Disorder</strong>, developed with Fundación CIMA. My first professional foray into bridging ontologies with assistive technologies.
+            Sistema integral de apoyo tecnológico para el diagnóstico y la intervención de niños con <strong>Trastorno del Espectro Autista</strong>, desarrollado con la Fundación CIMA. Mi primera incursión profesional en la integración de ontologías con tecnologías de asistencia.
           </p>
-          <h4>Approach</h4>
+          <h4>Aproximación</h4>
           <p>
-            A hybrid architecture with three components: mobile tools for therapists and families, an instrumented multisensory room for intervention sessions, and a robotic assistant for mediation tasks. Knowledge about patients, therapies, and instruments is structured through ontologies that enable reasoning about progress and activity planning.
+            Arquitectura híbrida con tres componentes: herramientas móviles para terapistas y familias, sala multisensorial instrumentada para sesiones de intervención, y asistente robótico para tareas de mediación. El conocimiento sobre pacientes, terapias e instrumentos se estructura mediante ontologías que permiten razonamiento sobre el progreso y planificación de actividades.
           </p>
-          <h4>Impact</h4>
+          <h4>Impacto</h4>
           <p>
-            Beneficiary population: children on the autism spectrum, their families, and multidisciplinary teams across Special Education, Early Stimulation, Speech Therapy, and Psychology. Derived publications at <strong>IEEE ARGENCON 2016</strong> (Buenos Aires) and <strong>CONIITI 2018</strong> (Bogotá).
+            Población beneficiaria: niños con TEA, familias y equipos multidisciplinarios de Educación Especial, Estimulación Temprana, Terapia de Lenguaje y Psicología. Publicaciones derivadas en <strong>IEEE ARGENCON 2016</strong> (Buenos Aires) y <strong>CONIITI 2018</strong> (Bogotá).
           </p>
           <h4>Stack</h4>
           <div class="tagrow">
-            <span class="tag">Ontologies</span><span class="tag">Web platform</span><span class="tag">Mobile apps</span>
-            <span class="tag">Multisensory room</span><span class="tag">Robotics</span><span class="tag">3D design</span>
+            <span class="tag">Ontologías</span><span class="tag">Plataforma web</span><span class="tag">Apps móviles</span>
+            <span class="tag">Sala multisensorial</span><span class="tag">Robótica</span><span class="tag">Diseño 3D</span>
           </div>
           <div class="resources">
             <a href="https://catedraunescoinclusion.org/descargas/dispositivos-electronicos/siro/" target="_blank" rel="noopener noreferrer">
-              <span class="rk">Site</span><span class="rl">Cátedra UNESCO Inclusión · SIRO</span><span class="ra" aria-hidden="true">↗</span>
+              <span class="rk">Sitio</span><span class="rl">Cátedra UNESCO Inclusión · SIRO</span><span class="ra" aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -975,40 +959,40 @@
 </section>
 
 <!-- =============================================================
-     SKILLS
+     HABILIDADES
      ============================================================= -->
-<section id="skills" aria-labelledby="skills-title">
+<section id="habilidades" aria-labelledby="habilidades-title">
   <div class="wrap">
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 04</span>
-      <h2 class="title" id="skills-title">Skills</h2>
-      <span class="sub">Technical stack · areas of practice</span>
+      <h2 class="title" id="habilidades-title">Habilidades</h2>
+      <span class="sub">Stack técnico · áreas de práctica</span>
     </div>
 
     <div class="skills-grid">
       <div class="skill-cat">
-        <h3>Artificial Intelligence</h3>
-        <p>Ontologies, large language models <em>(LLMs)</em>, embeddings, prompt engineering, text-classification algorithms, clustering, and social network analysis.</p>
+        <h3>Inteligencia Artificial</h3>
+        <p>Ontologías, modelos de lenguaje grandes <em>(LLMs)</em>, embeddings, ingeniería de prompts, algoritmos de clasificación de texto, clustering y análisis de redes sociales.</p>
       </div>
       <div class="skill-cat">
         <h3>Frameworks &amp; NLP</h3>
         <p>LangChain, BERTopic, LDA, HuggingFace transformers, OpenAI / GPT.</p>
       </div>
       <div class="skill-cat">
-        <h3>Languages</h3>
+        <h3>Lenguajes</h3>
         <p>Python, R, Java, JavaScript.</p>
       </div>
       <div class="skill-cat">
-        <h3>Cloud platforms</h3>
+        <h3>Plataformas en la nube</h3>
         <p>Google Cloud Platform, Microsoft Azure, Firebase, Algolia.</p>
       </div>
       <div class="skill-cat">
-        <h3>Databases</h3>
+        <h3>Bases de datos</h3>
         <p>PostgreSQL, Oracle, MongoDB, GraphDB, Firestore, SQLite.</p>
       </div>
       <div class="skill-cat">
-        <h3>BI &amp; visualization</h3>
-        <p>Tableau, Power BI, Looker Studio. Process modeling with Visio.</p>
+        <h3>BI &amp; visualización</h3>
+        <p>Tableau, Power BI, Looker Studio. Modelado de procesos con Visio.</p>
       </div>
     </div>
   </div>
@@ -1017,49 +1001,49 @@
 </main>
 
 <!-- =============================================================
-     COLOPHON — CONTACT + LANGUAGES
+     COLOPHON — CONTACTO + IDIOMAS
      ============================================================= -->
-<footer id="contact" class="colophon" aria-labelledby="contact-title">
+<footer id="contacto" class="colophon" aria-labelledby="contacto-title">
   <div class="wrap">
-    <h2 id="contact-title">Let's talk<em>.</em></h2>
+    <h2 id="contacto-title">Hablemos<em>.</em></h2>
 
     <div class="colophon-grid">
       <div>
-        <h3>Contact</h3>
+        <h3>Contacto</h3>
         <a href="mailto:jgalan07@gmail.com">jgalan07@gmail.com</a>
-        <p>Quito, Ecuador · UTC−5</p>
+        <p>Quito, Ecuador · UTC-5</p>
       </div>
       <div>
-        <h3>Professional</h3>
+        <h3>Profesional</h3>
         <a href="https://www.linkedin.com/in/jorge-gal%C3%A1n-mena-88b06573/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/jgalanm07" target="_blank" rel="noopener noreferrer">GitHub · jgalanm07</a>
       </div>
       <div>
-        <h3>Academic</h3>
-        <a href="https://scholar.google.com/citations?user=SMTMbUMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <h3>Académico</h3>
+        <a href="https://scholar.google.com/citations?user=SMTMbUMAAAAJ&amp;hl=es" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         <a href="https://orcid.org/0000-0002-6027-9854" target="_blank" rel="noopener noreferrer">ORCID · 0000-0002-6027-9854</a>
       </div>
     </div>
 
     <div class="colophon-grid" style="margin-top: 40px;">
       <div>
-        <h3>Languages</h3>
-        <p>Spanish — native</p>
-        <p>English — B1 (CEFR)</p>
+        <h3>Idiomas</h3>
+        <p>Español — lengua materna</p>
+        <p>Inglés — nivel B1 (MCER)</p>
       </div>
       <div>
-        <h3>Availability</h3>
-        <p>Applied research, AI consulting, academic collaborations, and knowledge-management projects.</p>
+        <h3>Disponibilidad</h3>
+        <p>Investigación aplicada, consultoría en IA, colaboraciones académicas y proyectos de gestión del conocimiento.</p>
       </div>
       <div>
-        <h3>Colophon</h3>
-        <p>Typography: Playfair Display · Source Serif 4 · JetBrains Mono. Built and published on GitHub Pages.</p>
+        <h3>Colofón</h3>
+        <p>Tipografía: Playfair Display · Source Serif 4 · JetBrains Mono. Construido y publicado en GitHub Pages.</p>
       </div>
     </div>
 
     <div class="colophon-foot">
       <span>© 2026 Jorge Galán-Mena</span>
-      <span>May MMXXVI · Quito</span>
+      <span>Mayo MMXXVI · Quito</span>
     </div>
   </div>
 </footer>
@@ -1073,6 +1057,5 @@
     });
   })();
 </script>
-
 </body>
 </html>
