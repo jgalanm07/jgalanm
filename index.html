@@ -384,7 +384,7 @@
     color: var(--accent);
     letter-spacing: -0.02em;
   }
-  .project-head h2 {
+  .project-head h3 {
     font-family: var(--serif-display);
     font-weight: 500;
     font-size: clamp(36px, 4.6vw, 60px);
@@ -630,9 +630,9 @@
         <p class="hero-tag">
           Specialist in applied artificial intelligence and knowledge management, with over a decade building production systems on ontologies, language models, and knowledge graphs.
         </p>
-        <a class="cv-button" href="assets/cv/cv.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Download CV as PDF, 186 kilobytes">
+        <a class="cv-button" href="assets/cv/cv_en.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Download CV as PDF, 188 kilobytes">
           <span>Download CV</span>
-          <span class="cv-meta">PDF · 186 kB</span>
+          <span class="cv-meta">PDF · 188 kB</span>
           <span class="cv-arrow" aria-hidden="true">↓</span>
         </a>
       </div>
@@ -642,7 +642,7 @@
     <div class="hero-stats" aria-label="Career highlights">
       <div class="stat"><div class="v">10+</div><div class="l">Years of experience</div></div>
       <div class="stat"><div class="v">20+</div><div class="l">Publications</div></div>
-      <div class="stat"><div class="v">05</div><div class="l">Selected projects</div></div>
+      <div class="stat"><div class="v">06</div><div class="l">Selected projects</div></div>
       <div class="stat"><div class="v">PhD candidate</div><div class="l">In progress · Univ. of Vigo</div></div>
     </div>
   </div>
@@ -736,13 +736,55 @@
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 03</span>
       <h2 class="title" id="projects-title">Projects</h2>
-      <span class="sub">Five · 2015 — 2026</span>
+      <span class="sub">Six · 2015 — 2026</span>
     </div>
 
-    <!-- 01 — ONTODUP -->
+    <!-- 01 — RESEARCH SPACES & PORTFOLIO DESIGN -->
     <article class="project">
       <header class="project-head">
         <div class="pn" aria-hidden="true">01</div>
+        <h3>Research Spaces &amp; Portfolio Design</h3>
+        <div class="when">2024 — 2026 · First author</div>
+      </header>
+      <p class="project-tagline">
+        From the research space to strategic portfolio design: forecasting academic diversification at the country level.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="assets/projects/proyecto_research_space.png" alt="Research space — network of scientific subfields colored by domain" loading="lazy" />
+          <div class="caption">Fig. 1 — Research space · subfields by domain and proximity</div>
+        </div>
+        <div class="project-copy">
+          <h4>Description</h4>
+          <p>
+            A study examining whether <strong>research-space</strong> analysis can ground the design of scientific portfolios from country–subfield forecasts. From a bibliographic catalog of articles, authors, and institutions, a research space is built from each country's activity and used to test whether measures derived from it help predict future shifts in specialization.
+          </p>
+          <h4>Method</h4>
+          <p>
+            An empirical framework that articulates three pieces: historical validation of research-space measures, comparison of alternative specifications of <strong>relative relatedness</strong>, and portfolio selection under an explicit complexity objective. Reduced-form <em>stepping-stone</em> models for subfield entry and exit are estimated, evaluated with in-sample evidence, <em>leave-one-year-out</em> validation, and robustness comparisons.
+          </p>
+          <h4>Result</h4>
+          <p>
+            In a 2024 comparison across <strong>164 countries</strong>, the optimized portfolios depart sharply from relatedness-ranked baselines: <strong>92.7%</strong> of countries shift toward lower auxiliary volume and higher forecast sophistication.
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">Economic complexity</span><span class="tag">Research space</span>
+            <span class="tag">Portfolio optimization</span><span class="tag">Bibliometrics</span><span class="tag">Stepping-stone models</span>
+          </div>
+          <div class="resources">
+            <a href="https://doi.org/10.3390/math14111953" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Paper</span><span class="rl"><em>Mathematics 14(11), 1953</em> — Galán-Mena et al. (2026)</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 — ONTODUP -->
+    <article class="project reverse">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">02</div>
         <h3>OntoDup</h3>
         <div class="when">2024 — 2026 · First author</div>
       </header>
@@ -752,7 +794,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="assets/projects/proyecto_ontodup.png" alt="OntoDup screenshot — knowledge graph with governed assertions" loading="lazy" />
-          <div class="caption">Fig. 1 — Governed assertion with provenance and evidence</div>
+          <div class="caption">Fig. 2 — Governed assertion with provenance and evidence</div>
         </div>
         <div class="project-copy">
           <h4>Description</h4>
@@ -789,10 +831,10 @@
       </div>
     </article>
 
-    <!-- 02 — SOCIAL MEDIA TOPIC MODELING -->
-    <article class="project reverse">
+    <!-- 03 — SOCIAL MEDIA TOPIC MODELING -->
+    <article class="project">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">02</div>
+        <div class="pn" aria-hidden="true">03</div>
         <h3>Social Media Topic Modeling</h3>
         <div class="when">Jan — Oct 2025 · Co-author</div>
       </header>
@@ -802,7 +844,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="assets/projects/proyecto_social_media.png" alt="BERTopic pipeline with thematic clusters" loading="lazy" />
-          <div class="caption">Fig. 2 — BERTopic pipeline and cluster visualization</div>
+          <div class="caption">Fig. 3 — BERTopic pipeline and cluster visualization</div>
         </div>
         <div class="project-copy">
           <h4>Description</h4>
@@ -834,10 +876,10 @@
       </div>
     </article>
 
-    <!-- 03 — COWORKING -->
-    <article class="project">
+    <!-- 04 — COWORKING -->
+    <article class="project reverse">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">03</div>
+        <div class="pn" aria-hidden="true">04</div>
         <h3>Coworking StartUPS</h3>
         <div class="when">2018 — 2020 · Developer</div>
       </header>
@@ -847,7 +889,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="assets/projects/proyecto_coworking_1.png" alt="View of the Coworking StartUPS portal" loading="lazy" />
-          <div class="caption">Fig. 3 — Portal view · Speed Mentoring</div>
+          <div class="caption">Fig. 4 — Portal view · Speed Mentoring</div>
         </div>
         <div class="project-copy">
           <h4>Description</h4>
@@ -866,12 +908,6 @@
           <div class="tagrow">
             <span class="tag">Angular</span><span class="tag">Google Cloud Platform</span><span class="tag">Ontologies</span>
           </div>
-        </div>
-        <div class="project-media" style="grid-column: 1 / span 2; margin-top: 12px;">
-          <img src="assets/projects/proyecto_coworking_2.png" alt="Network of participants — coworking visualization" loading="lazy" />
-          <div class="caption">Fig. 4 — Network of participants · mentors · administrators</div>
-        </div>
-        <div class="project-copy" style="grid-column: 1 / span 2; margin-top: 0;">
           <div class="resources">
             <a href="https://coworking.ups.edu.ec/home" target="_blank" rel="noopener noreferrer">
               <span class="rk">Site</span><span class="rl">coworking.ups.edu.ec</span><span class="ra" aria-hidden="true">↗</span>
@@ -881,10 +917,10 @@
       </div>
     </article>
 
-    <!-- 04 — CREAMINKA -->
-    <article class="project reverse">
+    <!-- 05 — CREAMINKA -->
+    <article class="project">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">04</div>
+        <div class="pn" aria-hidden="true">05</div>
         <h3>CREAMINKA</h3>
         <div class="when">May 2017 — Dec 2023 · Technical lead</div>
       </header>
@@ -930,10 +966,10 @@
       </div>
     </article>
 
-    <!-- 05 — SIRO -->
-    <article class="project">
+    <!-- 06 — SIRO -->
+    <article class="project reverse">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">05</div>
+        <div class="pn" aria-hidden="true">06</div>
         <h3>SIRO</h3>
         <div class="when">Oct 2015 — Jun 2017 · Developer</div>
       </header>

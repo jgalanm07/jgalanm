@@ -368,7 +368,7 @@
     color: var(--accent);
     letter-spacing: -0.02em;
   }
-  .project-head h2 {
+  .project-head h3 {
     font-family: var(--serif-display);
     font-weight: 500;
     font-size: clamp(36px, 4.6vw, 60px);
@@ -614,9 +614,9 @@
         <p class="hero-tag">
           Especialista en inteligencia artificial aplicada y gestión del conocimiento, con más de diez años construyendo sistemas en producción sobre ontologías, modelos de lenguaje y grafos de conocimiento.
         </p>
-        <a class="cv-button" href="../assets/cv/cv.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Descargar currículum vitae en PDF, 186 kilobytes">
+        <a class="cv-button" href="../assets/cv/cv_es.pdf" download="Jorge_Galan_Mena_CV.pdf" aria-label="Descargar currículum vitae en PDF, 191 kilobytes">
           <span>Descargar CV</span>
-          <span class="cv-meta">PDF · 186 kB</span>
+          <span class="cv-meta">PDF · 191 kB</span>
           <span class="cv-arrow" aria-hidden="true">↓</span>
         </a>
       </div>
@@ -626,7 +626,7 @@
     <div class="hero-stats">
       <div class="stat"><div class="v">10+</div><div class="l">Años de trayectoria</div></div>
       <div class="stat"><div class="v">20+</div><div class="l">Publicaciones</div></div>
-      <div class="stat"><div class="v">05</div><div class="l">Proyectos seleccionados</div></div>
+      <div class="stat"><div class="v">06</div><div class="l">Proyectos seleccionados</div></div>
       <div class="stat"><div class="v">Doctorando</div><div class="l">En curso · Univ. de Vigo</div></div>
     </div>
   </div>
@@ -720,13 +720,55 @@
     <div class="chapter">
       <span class="num" aria-hidden="true">§ 03</span>
       <h2 class="title" id="proyectos-title">Proyectos</h2>
-      <span class="sub">Cinco · 2015 — 2026</span>
+      <span class="sub">Seis · 2015 — 2026</span>
     </div>
 
-    <!-- 01 — ONTODUP -->
+    <!-- 01 — RESEARCH SPACES & PORTFOLIO DESIGN -->
     <article class="project">
       <header class="project-head">
         <div class="pn" aria-hidden="true">01</div>
+        <h3>Research Spaces &amp; Portfolio Design</h3>
+        <div class="when">2024 — 2026 · Primer autor</div>
+      </header>
+      <p class="project-tagline">
+        Del espacio de investigación al diseño estratégico de portafolios: pronóstico de la diversificación académica a nivel país.
+      </p>
+      <div class="project-body">
+        <div class="project-media">
+          <img src="../assets/projects/proyecto_research_space.png" alt="Espacio de investigación — red de subcampos científicos coloreados por dominio" loading="lazy" />
+          <div class="caption">Fig. 1 — Espacio de investigación · subcampos por dominio y proximidad</div>
+        </div>
+        <div class="project-copy">
+          <h4>Descripción</h4>
+          <p>
+            Estudio que examina si el análisis de <strong>espacios de investigación</strong> puede sustentar el diseño de portafolios científicos a partir de pronósticos a nivel país–subcampo. A partir de un catálogo bibliográfico de artículos, autores e instituciones, se construye un espacio de investigación desde la actividad de cada país y se evalúa si las medidas derivadas de ese espacio ayudan a predecir cambios futuros de especialización.
+          </p>
+          <h4>Método</h4>
+          <p>
+            Marco empírico que articula tres elementos: validación histórica de las medidas del espacio de investigación, comparación de especificaciones alternativas de <strong>relatividad relativa</strong>, y selección de portafolio bajo un objetivo explícito de complejidad. Se estiman modelos reduced-form tipo <em>stepping-stone</em> para entrada y salida de subcampos, evaluados con evidencia in-sample, validación <em>leave-one-year-out</em> y comparaciones de robustez.
+          </p>
+          <h4>Resultado</h4>
+          <p>
+            En una comparación de 2024 sobre <strong>164 países</strong>, los portafolios optimizados difieren marcadamente de los rankings por relatedness: el <strong>92.7%</strong> de los países se desplaza hacia menor volumen auxiliar y mayor sofisticación futura prevista.
+          </p>
+          <h4>Stack</h4>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">Complejidad económica</span><span class="tag">Research space</span>
+            <span class="tag">Optimización de portafolio</span><span class="tag">Bibliometría</span><span class="tag">Modelos stepping-stone</span>
+          </div>
+          <div class="resources">
+            <a href="https://doi.org/10.3390/math14111953" target="_blank" rel="noopener noreferrer">
+              <span class="rk">Paper</span><span class="rl"><em>Mathematics 14(11), 1953</em> — Galán-Mena et al. (2026)</span><span class="ra" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 — ONTODUP -->
+    <article class="project reverse">
+      <header class="project-head">
+        <div class="pn" aria-hidden="true">02</div>
         <h3>OntoDup</h3>
         <div class="when">2024 — 2026 · Primer autor</div>
       </header>
@@ -736,7 +778,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="../assets/projects/proyecto_ontodup.png" alt="Captura de OntoDup, grafo de conocimiento con aserciones gobernadas" loading="lazy" />
-          <div class="caption">Fig. 1 — Aserción gobernada con procedencia y evidencia</div>
+          <div class="caption">Fig. 2 — Aserción gobernada con procedencia y evidencia</div>
         </div>
         <div class="project-copy">
           <h4>Descripción</h4>
@@ -773,10 +815,10 @@
       </div>
     </article>
 
-    <!-- 02 — SOCIAL MEDIA TOPIC MODELING -->
-    <article class="project reverse">
+    <!-- 03 — SOCIAL MEDIA TOPIC MODELING -->
+    <article class="project">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">02</div>
+        <div class="pn" aria-hidden="true">03</div>
         <h3>Social Media Topic Modeling</h3>
         <div class="when">Ene — Oct 2025 · Co-autor</div>
       </header>
@@ -786,7 +828,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="../assets/projects/proyecto_social_media.png" alt="Pipeline de BERTopic con clusters temáticos" loading="lazy" />
-          <div class="caption">Fig. 2 — Pipeline BERTopic y visualización de clusters</div>
+          <div class="caption">Fig. 3 — Pipeline BERTopic y visualización de clusters</div>
         </div>
         <div class="project-copy">
           <h4>Descripción</h4>
@@ -818,10 +860,10 @@
       </div>
     </article>
 
-    <!-- 03 — COWORKING -->
-    <article class="project">
+    <!-- 04 — COWORKING -->
+    <article class="project reverse">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">03</div>
+        <div class="pn" aria-hidden="true">04</div>
         <h3>Coworking StartUPS</h3>
         <div class="when">2018 — 2020 · Desarrollador</div>
       </header>
@@ -831,7 +873,7 @@
       <div class="project-body">
         <div class="project-media">
           <img src="../assets/projects/proyecto_coworking_1.png" alt="Vista del portal Coworking StartUPS" loading="lazy" />
-          <div class="caption">Fig. 3 — Vista del portal · Speed Mentoring</div>
+          <div class="caption">Fig. 4 — Vista del portal · Speed Mentoring</div>
         </div>
         <div class="project-copy">
           <h4>Descripción</h4>
@@ -850,12 +892,6 @@
           <div class="tagrow">
             <span class="tag">Angular</span><span class="tag">Google Cloud Platform</span><span class="tag">Ontologías</span>
           </div>
-        </div>
-        <div class="project-media" style="grid-column: 1 / span 2; margin-top: 12px;">
-          <img src="../assets/projects/proyecto_coworking_2.png" alt="Red de participantes — visualización del coworking" loading="lazy" />
-          <div class="caption">Fig. 4 — Red de participantes · mentores · administradores</div>
-        </div>
-        <div class="project-copy" style="grid-column: 1 / span 2; margin-top: 0;">
           <div class="resources">
             <a href="https://coworking.ups.edu.ec/home" target="_blank" rel="noopener noreferrer">
               <span class="rk">Sitio</span><span class="rl">coworking.ups.edu.ec</span><span class="ra" aria-hidden="true">↗</span>
@@ -865,10 +901,10 @@
       </div>
     </article>
 
-    <!-- 04 — CREAMINKA -->
-    <article class="project reverse">
+    <!-- 05 — CREAMINKA -->
+    <article class="project">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">04</div>
+        <div class="pn" aria-hidden="true">05</div>
         <h3>CREAMINKA</h3>
         <div class="when">May 2017 — Dic 2023 · Conductor técnico</div>
       </header>
@@ -914,10 +950,10 @@
       </div>
     </article>
 
-    <!-- 05 — SIRO -->
-    <article class="project">
+    <!-- 06 — SIRO -->
+    <article class="project reverse">
       <header class="project-head">
-        <div class="pn" aria-hidden="true">05</div>
+        <div class="pn" aria-hidden="true">06</div>
         <h3>SIRO</h3>
         <div class="when">Oct 2015 — Jun 2017 · Desarrollador</div>
       </header>
